@@ -1,12 +1,26 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rebeccapurple;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E8EAF1;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.textarea{
+    width: 50%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: #EFF1F5;
+    margin: 20px;
+    margin-top: 20px;
+    font-size: 30px;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../styles/App.css"
 function App() {
   const [data, setData] = useState("");
   const [loading, setLoading] = useState(false);
@@ -12,9 +12,10 @@ function App() {
 
       setData(val);
       const preview = document.getElementsByClassName("preview")[0]
-      const textarea = document.getElementsByClassName("textarea")[0]
-      preview.innerHTML = val;
-      textarea.innerHTML = ""
+      const dataHeading = document.createElement("h1");
+      dataHeading.innerText = val;
+      preview.append(dataHeading)
+      e.target.value = ""
       
     }
   };
