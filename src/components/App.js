@@ -20,11 +20,12 @@ function App() {
       .replace(/^# (.*$)/gim, "<h1>$1</h1>") // Heading 1
       .replace(/^## (.*$)/gim, "<h2>$1</h2>") // Heading 2
       .replace(/^### (.*$)/gim, "<h3>$1</h3>") // Heading 3
-      .replace(/\*\*(.*)\*\*/gim, "<b>$1</b>") // Bold
+      .replace(/\*\*(.*)\*\*/gim, "<strong>$1</strong>") // Strong
       .replace(/\*(.*)\*/gim, "<i>$1</i>"); // Italic
-
+  
     return { __html: html };
   };
+  
 
   return (
     <div className="app">
